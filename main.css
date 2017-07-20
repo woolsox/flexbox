@@ -1,0 +1,97 @@
+body {
+    background: #fefff5;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #35363a;
+    line-height: 1.4em;
+}
+
+.wrapper {
+    width: 700px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+/*
+FLEX STYLES FOR THE TOP ROW OF CONTENT
+*/
+
+#main {
+    display: flex;
+    justify-content: space-between;
+/* justify-content ensures that any gaps in the top row will appear between the flex items  */
+}
+
+#main div {
+    flex-basis: 460px;
+}
+
+#main div:last-child {
+    flex-basis: 220px;
+}
+
+/*
+The following styles are used to achieve
+layout in out mockup for the SECTION 2
+*/
+
+#quote {
+    border-top: 6px solid #e9e5d5;
+    border-bottom: 6px solid #e9e5d5;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+#quote p {
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+/*
+This removes the browser default
+styles for unordered lists
+*/
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+      /*
+    THIS MAKES THE FLEXBOX CONTAINER (below)
+    */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ADDITIONAL VISUAL STYLES */
+
+li {
+    background: #35363a;
+    flex-basis: 180px;
+    padding: 20px;
+}
+
+li p, li h3 {
+    color: white;
+}
+
+li h3 {
+    margin-top: 0;
+}
+
+li h2 {
+    margin-bottom: 0;
+}
+
